@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="contact_form">
+        <xpath expr="//field[@name='type']" position="after">
+            <field name="cni" attrs="{'invisible': [('type', '!=', 'person')]}" />
+            <field name="niu" attrs="{'invisible': [('type', '!=', 'company')]}" />
+        </xpath>
+    </template>
+</odoo>
